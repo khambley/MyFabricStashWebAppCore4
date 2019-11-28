@@ -5,7 +5,8 @@ using System.Threading.Tasks;
 
 namespace MyFabricStashWebAppCore4.Models
 {
-    interface IFabricRepository
+    // By default interfaces are private, you have to add the public accessor manually.
+    public interface IFabricRepository
     {
         IQueryable<Fabric> Fabrics { get; }
     }
