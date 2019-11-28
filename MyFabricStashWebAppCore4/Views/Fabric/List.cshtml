@@ -1,0 +1,9 @@
+﻿@model IEnumerable<Fabric>
+
+@foreach (var f in Model) {
+    <div>
+        <h3>@f.MainCategory / @f.SubCategory</h3>
+        <h4>@f.Name</h4>
+        <img src="/images/@f.ImagePath" width="100" alt="thumbnail" />
+    </div>
+}

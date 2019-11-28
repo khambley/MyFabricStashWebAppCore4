@@ -13,7 +13,7 @@ namespace MyFabricStashWebAppCore4.Models
             new Fabric {
                 Name = "Chicago Cubs v1",
                 MainCategory = "Sports", SubCategory = "MLB Baseball",
-                ImagePath = "\\images\\Chicago-Cubs-v1-fabric.jpg",
+                ImagePath = "Chicago-Cubs-v1-fabric.jpg",
                 Type = "Woven",
                 Weight = "Medium",
                 Content = "100% Cotton",
@@ -29,7 +29,7 @@ namespace MyFabricStashWebAppCore4.Models
             new Fabric {
                 Name = "Chicago Bears v1",
                 MainCategory = "Sports", SubCategory = "NFL Football",
-                ImagePath = "\\images\\chicago_bears_fabric.jpg",
+                ImagePath = "0_chicago_bears_fabric.jpg",
                 Type = "Woven",
                 Weight = "Medium",
                 Content = "100% Cotton",
@@ -45,7 +45,7 @@ namespace MyFabricStashWebAppCore4.Models
             new Fabric {
                 Name = "Milwaukee Bucks v1",
                 MainCategory = "Sports", SubCategory = "NBA Basketball",
-                ImagePath = "\\images\\D068D5A3-CBA5-4C2A-974F-66F012509296.jpeg",
+                ImagePath = "D068D5A3-CBA5-4C2A-974F-66F012509296.jpeg",
                 Type = "Woven",
                 Weight = "Medium",
                 Content = "100% Cotton",
