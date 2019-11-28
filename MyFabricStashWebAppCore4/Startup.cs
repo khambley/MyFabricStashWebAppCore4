@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.DependencyInjection;
 using MyFabricStashWebAppCore4.Models;
 
@@ -21,14 +22,17 @@ namespace MyFabricStashWebAppCore4
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        // This method consists of classes (known as middleware) that will inspect HTTP requests and generate responses.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             app.UseDeveloperExceptionPage();
             app.UseStatusCodePages();
             app.UseStaticFiles();
-            app.UseMvc(routes =>
-            {
 
+            app.UseMvc(routes => {
+                routes.MapRoute(
+                name: "default",
+                template: "{controller=Fabric}/{action=List}/{id?}");
             });
 
             //app.Run(async (context) =>
