@@ -18,6 +18,7 @@ namespace MyFabricStashWebAppCore4
         // This method gets called by the runtime. Use this method to add services to the container.
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
 
+        //This constructor was added so that it receives the configuration data loaded from the appsettings.json file
         public Startup(IConfiguration configuration) => Configuration = configuration;
         public IConfiguration Configuration { get; }
 
