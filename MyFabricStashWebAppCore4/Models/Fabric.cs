@@ -21,8 +21,7 @@ namespace MyFabricStashWebAppCore4.Models
         public string Colors { get; set; }
         public string BackgroundColor { get; set; }
         public string Notes { get; set; }
-        public DateTime DateAdded { get; set; }
-        public DateTime DateModified { get; set; }
+        
 
     }
 }

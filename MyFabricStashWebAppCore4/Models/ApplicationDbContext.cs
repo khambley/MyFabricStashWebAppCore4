@@ -13,5 +13,10 @@ namespace MyFabricStashWebAppCore4.Models
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
         : base(options) { }
         public DbSet<Fabric> Fabrics { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Fabric>().Property<DateTime>("LastUpdated");
+        }
     }
 }

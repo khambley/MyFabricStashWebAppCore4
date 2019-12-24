@@ -23,8 +23,7 @@ namespace MyFabricStashWebAppCore4.Models
                 Colors = "blue,red,white",
                 BackgroundColor = "Blue",
                 Notes = "This is some notes",
-                DateAdded = DateTime.UtcNow,
-                DateModified = DateTime.UtcNow
+
             },
             new Fabric {
                 Name = "Chicago Bears v1",
@@ -39,8 +38,6 @@ namespace MyFabricStashWebAppCore4.Models
                 Colors = "dark blue,orange,white",
                 BackgroundColor = "Dark Blue",
                 Notes = "This is some notes",
-                DateAdded = DateTime.UtcNow,
-                DateModified = DateTime.UtcNow
             },
             new Fabric {
                 Name = "Milwaukee Bucks v1",
@@ -55,8 +52,6 @@ namespace MyFabricStashWebAppCore4.Models
                 Colors = "green,tan,white",
                 BackgroundColor = "White",
                 Notes = "This is some notes",
-                DateAdded = DateTime.UtcNow,
-                DateModified = DateTime.UtcNow
             }
         }.AsQueryable<Fabric>();
     }
