@@ -16,7 +16,8 @@ namespace MyFabricStashWebAppCore4.Models
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Fabric>().Property<DateTime>("LastUpdated");
+            modelBuilder.Entity<Fabric>().Property<DateTime>("LastUpdated")
+                .HasDefaultValue(System.DateTime.Now);
         }
     }
 }
