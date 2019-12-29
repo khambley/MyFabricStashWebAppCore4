@@ -10,11 +10,16 @@ namespace MyFabricStashWebAppCore4.Controllers
     public class FabricController : Controller
     {
         private IFabricRepository repository;
+        public int PageSize = 4;
         public FabricController(IFabricRepository repo)
         {
             repository = repo;
         }
-        public ViewResult List() => View(repository.Fabrics);
+        public ViewResult List(int fabricPage = 1) => View(repository.Fabrics
+            .OrderBy(f => f.FabricId)
+            .Skip((fabricPage - 1) * PageSize)
+            .Take(PageSize)
+            );
     }
     
 }

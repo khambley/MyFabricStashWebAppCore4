@@ -16,6 +16,7 @@ namespace MyFabricStashWebAppCore4.Models
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            //See Pro Entity Framework Core 2 book by Adam Freeman (Apress) p.543
             modelBuilder.Entity<Fabric>().Property<DateTime>("LastUpdated")
                 .HasDefaultValue(System.DateTime.Now);
         }

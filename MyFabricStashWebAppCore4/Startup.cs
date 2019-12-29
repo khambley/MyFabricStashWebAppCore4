@@ -43,6 +43,7 @@ namespace MyFabricStashWebAppCore4
                 name: "default",
                 template: "{controller=Fabric}/{action=List}/{id?}");
             });
+            SeedData.EnsurePopulated(app);
 
             //app.Run(async (context) =>
             //{

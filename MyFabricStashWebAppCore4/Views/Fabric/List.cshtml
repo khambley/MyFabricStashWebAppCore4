@@ -5,10 +5,11 @@
     }
 </style>
 @foreach (var f in Model) {
-    <div>
-        <h3>@f.MainCategory / @f.SubCategory</h3>
-        <h4>Name: @f.Name</h4>
-        <p>Item Code: <span class="code">@f.ItemCode</span></p>
-        <img src="/images/@f.ImagePath" width="100" alt="thumbnail" />
-    </div>
+<div>
+    <h3>@f.MainCategory / @f.SubCategory</h3>
+    <h4>Name: @f.Name</h4>
+    <p>Item Code: <span class="code">@f.ItemCode</span></p>
+    @*<img src="/images/@f.ImagePath" width="100" alt="thumbnail" />*@
+    <img src="@f.ImagePath" alt="thumbnail" />
+</div>
 }
