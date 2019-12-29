@@ -26,6 +26,7 @@ namespace MyFabricStashWebAppCore4
         {
             services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(Configuration["Data:MyFabricStashCoreDbConnection:ConnectionString"]));
             services.AddTransient<IFabricRepository, EFFabricRepository>();
+            //services.AddTransient<IFabricRepository, FakeFabricRepository>();
             services.AddMvc();
         }
 
